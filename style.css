@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    /* font-weight: 600; */
+}
+
+body{
+    background-color:sandybrown;
+}
+
+#container{
+    position: relative;
+    height:575px;
+    width: 400px;
+    margin: 15px auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(red, green, blue, alpha);
+    transition: 0.3s;
+    /* border: 1px solid black; */
+}
+
+#container.toggle-dark{
+
+    background-color:black;
+    color: white; 
+}
+
+
+#output , #buttons{
+    padding: 2%;
+}
+
+#output{
+    height:19.2%;
+    /* border: 1px solid black; */
+}
+
+#history{
+    /* border: 1px solid black; */
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#history p{
+    /* border: 1px solid black; */
+   text-align: right;
+   font-size: 20px;
+   text-align: right;
+   color: #a6a6a6;
+}
+
+#value{
+    /* border: 1px solid black; */
+    text-align: right;
+    font-size: 40px;
+    height: 50%;
+    font-weight: bold;
+}
+
+#buttons{
+    height: 81%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+   font-weight: bold; 
+   font-size: 18px;
+   cursor: pointer;
+}
+
+button:active{
+    font-size: 15px;
+   
+}
+
+.empty{
+    visibility: hidden;
+}
+
+.numbers{
+    background-color: white;
+    transition: 0.3s;
+}
+
+.numbers-dark{
+    background-color: black;
+    color: white;
+}
+
+.operator-dark{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+
+}
+
+button:last-child{
+    background-color: coral;
+}
+
+
+.toggle{
+    position: absolute;
+    top: 25%;
+    left: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.toggle>div
+{
+    font-size: 25px;
+    padding: 5px 20px;
+    border-radius: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* toggle button */
+
+.light{
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.light:hover{
+    opacity: 1;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+}
+.dark:hover{
+    opacity: 1;
+}
